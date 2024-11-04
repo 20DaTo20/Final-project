@@ -3,14 +3,32 @@
         display: none;
     }
     .f-divs {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 }
 @media (max-width: 1024px){
     .burger-bar {
         display: none;
+    }
+    .input-cl::-webkit-input-placeholder {
+        width: 100%;
+    }
+    .input-cl::-moz-placeholder {
+        width: 100%;
+    }
+    .input-cl:-ms-input-placeholder {
+        width: 100%;
+    }
+    .input-cl::-ms-input-placeholder {
+        width: 100%;
     }
     .input-cl::placeholder {
         width: 100%;
@@ -109,7 +127,9 @@
         font-size: 25px;
     }
     .form-div {
-        column-gap: 26px;
+        -webkit-column-gap: 26px;
+           -moz-column-gap: 26px;
+                column-gap: 26px;
         margin-left: 45px;
     }
     .cont-2block {
@@ -122,10 +142,16 @@
         height: 400px;
     }
     .header-nav{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .ul-lists {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .header-nav.nav-h {
         display: block;
@@ -148,23 +174,37 @@
     }
     .form-div {
         margin-left: 12px;
-        column-gap: 20px;
+        -webkit-column-gap: 20px;
+           -moz-column-gap: 20px;
+                column-gap: 20px;
     }
     .f-divs {
         max-width: 69px;
         max-height: 16px;
     }
     .input-cl {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         font-size: 7px;
         width: 90%;
     }
     .date {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         font-size: 7px;
         width: 100%;
     }
