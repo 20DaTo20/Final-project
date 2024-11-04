@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 <head>
+    
     <meta charset='utf-8'>
-    <title>Page Title</title>
+    <title>Final Project</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="header-main-div header-cl">
-            <a href="index.html"><h2>LuxuryCars</h2></a>
-            <a href=""><svg class="burger-bar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></a>
-            <nav class="header-nav">
+            <a class="header-h2" href="index.html"><h2>LuxuryCars</h2></a>
+            <a id="b-bar" href="#"><svg  class="burger-bar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></a>
+            <nav id="b-nav" class="header-nav ">
                 <ul class="ul-lists">
-                    <li class="li-item"><a href="">Home</a></li>
-                    <li class="li-item"><a href="">Services</a></li>
-                    <li class="li-item"><a href="">Blog</a></li>
-                    <li class="li-item"><a href="">Contact Us</a></li>
-                        
-                    
+                    <li class="li-item"><a class="header-h2" href="">Home</a></li>
+                    <li class="li-item"><a class="header-h2" href="">Services</a></li>
+                    <li class="li-item"><a class="header-h2" href="">Blog</a></li>
+                    <li class="li-item"><a class="header-h2" href="">Contact Us</a></li>  
                 </ul>
             </nav>
            <div class="login-div">
@@ -28,11 +31,12 @@
             <a class="login" href="">Sign In</a>
            </div>
         </div>
-            
     </header>
     <main>
-         <section class="sec-back nd-sec">
-                
+         <section class="sec-back">
+           <div class="sec-b2">
+
+           </div>
          </section>
          <section>
             <div class="section-div">
@@ -52,7 +56,8 @@
                         <input class="date" type="date" id="book" name="Book">
                         <input class="button" type="submit" value="submit">
                     </form> </div>
-                    <div class="book"><a class="book-text" href="">Book</a></div>
+                    <!-- <div class="book"><a class="book-text" href="">Book</a></div> -->
+                    <button id="buton" class="book"><a class="book-text" href="">Book</a></button>
                   </div>
             </div>
          </section>
@@ -91,7 +96,7 @@
                        <form action="#">
                         <label for="email"></label>
                         <input class="sec4-input" type="email" id="email"  placeholder="Email">
-                        <button class="sec4-btn"><a class="next-btn">Next</a></button>
+                        <button id="next-btn" class="sec4-btn"><a class="next-btn">Next</a></button>
                        </form>
                   </div>
          </section>
@@ -138,12 +143,9 @@
                  <a href="https://www.instagram.com/"><img class="img-vector" src="images/Vector (5).svg" alt=""></a>
             </div>
   </div>
-       
-  
-  
-         
-        
     </footer>
+
+    <script src="JS/script.js"></script>
 </body>
 </html>
 
