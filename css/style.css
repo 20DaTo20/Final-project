@@ -98,7 +98,7 @@
  }
  /* section styles */
  .sec-back {
-     background-image: url(/images/baner2.png.png);
+     background-image: url(../images/baner2.png.png);
      height: 900px;
      background-repeat: no-repeat;
      width: 100%;
