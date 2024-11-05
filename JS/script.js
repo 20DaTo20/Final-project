@@ -1,6 +1,6 @@
 let btnElement = document.getElementById('buton')
 
-btnElement.addEventListener('click', function(){
+btnElement.addEventListener('click' , function(){
     alert('You Just Booked Your First Car')
 })
 let butonelement = document.getElementById('next-btn')
